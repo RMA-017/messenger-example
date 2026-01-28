@@ -1,13 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>web</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Telegram</div>
+
+      <div class="chat-item active">
+        <div class="avatar">A</div>
+        <div class="chat-info">
+          <div class="chat-name">Ali</div>
+          <div class="last-message">Salom 👋</div>
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <div class="avatar">B</div>
+        <div class="chat-info">
+          <div class="chat-name">Bek</div>
+          <div class="last-message">Qalaysan?</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CHAT -->
+    <main class="chat">
+
+      <!-- HEADER -->
+      <div class="chat-header">
+        <div class="avatar">A</div>
+        <div class="chat-title">Ali</div>
+      </div>
+
+      <!-- MESSAGES -->
+      <div class="messages">
+        <div class="message incoming">
+          Salom
+        </div>
+
+        <div class="message outgoing">
+          Salom, yaxshiman 🙂
+        </div>
+
+        <div class="message incoming">
+          Socket tayyormi?
+        </div>
+      </div>
+
+      <!-- INPUT -->
+      <form class="chat-input">
+        <input type="text" placeholder="Write a message..." />
+        <button type="submit">➤</button>
+      </form>
+
+    </main>
+  </div>
+
+
+
+
+  <script type="module" src="/public/js/home.js"></script>
+</body>
+
 </html>

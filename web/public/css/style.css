@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #e6ebf1;
+}
+
+/* LAYOUT */
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-header {
+    background: #0088cc;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.chat-item {
+    display: flex;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.chat-item:hover,
+.chat-item.active {
+    background: #f2f2f2;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    background: #0088cc;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.chat-info {
+    flex: 1;
+}
+
+.chat-name {
+    font-weight: bold;
+}
+
+.last-message {
+    font-size: 13px;
+    color: gray;
+}
+
+/* CHAT */
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.chat-title {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* MESSAGES */
+.messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 65%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.incoming {
+    background: #fff;
+    align-self: flex-start;
+}
+
+.outgoing {
+    background: #dcf8c6;
+    align-self: flex-end;
+}
+
+/* INPUT */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input button {
+    background: #0088cc;
+    color: white;
+    border: none;
+    padding: 0 18px;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -15,7 +15,7 @@ export default defineConfig({
     resolve: {
         alias: {                                                          /// import qilishni osonlashtirish uchun
             '@app': path.resolve(__dirname, './src/app'),
-            '@css': path.resolve(__dirname, './src/css'),
+            '@css': path.resolve(__dirname, './public/css'),
             '@lib': path.resolve(__dirname, './src/library'),
         },
     },
